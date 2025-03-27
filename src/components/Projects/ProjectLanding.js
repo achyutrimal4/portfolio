@@ -76,15 +76,6 @@ function ProjectLanding() {
                         <VscLinkExternal />
                       </p>
                     </a>
-                    <a
-                      href={project.url || "#"}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      <p>
-                        <faIcons.FaGithub />
-                      </p>
-                    </a>
                   </div>
                 </div>
               </div>

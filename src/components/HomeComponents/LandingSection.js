@@ -30,14 +30,25 @@ function LandingSection() {
           </div>
         </div>
         <div className="landing-row social-icons">
-          <a href="https://github.com/achyutrimal4">
-            {" "}
+          <a
+            href="https://github.com/achyutrimal4"
+            target="_blank"
+            rel="noreferrer"
+          >
             <faIcons.FaGithub />
           </a>
-          <a href="https://www.linkedin.com/in/achyutrimal004/">
+          <a
+            href="https://www.linkedin.com/in/achyutrimal004/"
+            target="_blank"
+            rel="noreferrer"
+          >
             <faIcons.FaLinkedin />
           </a>
-          <a href="https://leetcode.com/u/achyutrimal4/">
+          <a
+            href="https://leetcode.com/u/achyutrimal4/"
+            target="_blank"
+            rel="noreferrer"
+          >
             <SiLeetcode />
           </a>
         </div>
