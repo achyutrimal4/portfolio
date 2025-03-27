@@ -1,0 +1,206 @@
+.projectlanding-section {
+  width: 100%;
+  padding: 4%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.projectlanding-section .title {
+  margin-bottom: 2em;
+}
+.projectlanding-section .title p {
+  font-family: "Oswald", sans-serif;
+}
+.filter-buttons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1em;
+  width: 100%;
+  margin-bottom: 2em;
+}
+.filter-buttons button {
+  background-color: transparent;
+  outline: none;
+  border: 1px solid transparent;
+  cursor: pointer;
+  font-family: "Oswald", sans-serif;
+  font-weight: 300;
+  font-size: 1.1em;
+  padding: 0.1em 0.5em;
+  border-radius: 5em;
+  position: relative;
+}
+.filter-buttons button:hover {
+  border: 1px solid white;
+}
+.active-button {
+  color: var(--primary-color);
+  background-color: white !important;
+}
+.projectlanding-container {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.projectlanding-left h1 a {
+  text-decoration: none;
+}
+.analysis-projects--grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(350px, 1fr));
+  gap: 2em;
+}
+.an-project-card {
+  height: 20em;
+  width: 20em;
+  overflow: hidden;
+  border-radius: 4px;
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  background-color: var(--secondary-color);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3); /* Subtle base shadow */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth animation */
+  overflow: hidden; /* Clean edges for glow */
+}
+.an-project-card::before {
+  content: "";
+  position: absolute;
+  top: -5%;
+  left: -5%;
+  width: 110%;
+  height: 110%;
+  background: radial-gradient(circle, rgba(255, 255, 255, 0.05), transparent);
+  border-radius: 12px;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  z-index: 0; /* Behind the content */
+}
+.an-project-card:hover::before {
+  opacity: 1;
+}
+.an-project-card:hover {
+  transform: scale(1.01); /* Slightly enlarge on hover */
+  box-shadow: 0 8px 25px rgba(255, 255, 255, 0.2); /* Softer cyan glow */
+}
+.an-project-card:hover .an-project-title {
+  text-decoration: underline;
+  transition: transform 0.5s;
+}
+.an-project-description {
+  position: relative; /* Keeps content above the glow */
+  z-index: 1;
+}
+#an-project-tag {
+  position: absolute;
+  top: 0.5em;
+  left: 1em;
+  background-color: orangered;
+  padding: 0 0.5em;
+  font-size: 0.8em;
+  font-weight: 600;
+  border-radius: 2em;
+  border: 1px solid white;
+  box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px,
+    rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px,
+    rgba(0, 0, 0, 0.09) 0px 32px 16px;
+}
+
+.an-project-card img {
+  width: 100%;
+  height: 50%;
+  object-fit: cover;
+}
+.an-card-footer {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 4%;
+}
+.an-card-footer a p {
+  font-size: 1.1em;
+}
+.an-card-footer a:hover > * {
+  transform: translateY(-5px);
+  transition: transform 0.3s ease;
+}
+
+.an-project-description {
+  padding: 0.5em;
+}
+.an-project-title a {
+  font-weight: 600;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+.an-project-description p {
+  font-size: 0.8em;
+  margin-top: 0.8em;
+  color: rgb(172, 172, 172);
+}
+.an-card-bottom {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 1em;
+}
+.project-date {
+  display: flex;
+  align-items: center;
+  gap: 0.3em;
+}
+.view-all {
+  margin-top: 2em;
+}
+.view-all h1 a {
+  font-weight: 500;
+  font-size: 1em;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+@media (max-width: 1120px) {
+  .analysis-projects--grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(30%, 1fr));
+    gap: 2em;
+  }
+  .an-project-card {
+    width: 100%;
+  }
+}
+@media (max-width: 920px) {
+  .analysis-projects--grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(40%, 1fr));
+    gap: 2em;
+  }
+  .an-project-card {
+    width: 100%;
+  }
+}
+@media (max-width: 720px) {
+  .analysis-projects--grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(240px, 1fr));
+    gap: 2em;
+  }
+  .an-project-card {
+    width: 100%;
+  }
+}
+
+@media (max-width: 520px) {
+  .analysis-projects--grid {
+    display: grid;
+    grid-template-columns: repeat(1, minmax(350px, 1fr));
+    gap: 2em;
+  }
+  .an-project-card {
+    width: 100%;
+  }
+}

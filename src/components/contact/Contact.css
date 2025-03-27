@@ -1,0 +1,121 @@
+.contact-section {
+  display: flex;
+  padding: 4%;
+  width: 100%;
+}
+.contact-section .contact-container {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.left-container__contact {
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+}
+.right-container__contact {
+  display: flex;
+  flex-direction: column;
+  width: 35%;
+  height: 100%;
+}
+.contact-box {
+  margin-bottom: 2em;
+}
+.contact-box h1 {
+  margin-bottom: 0.5em;
+}
+.contact-box span {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 1em;
+}
+.form-container {
+  width: 100%;
+  margin-top: 2em;
+}
+.form-container form {
+  display: flex;
+  flex-direction: column;
+  gap: 1em 1em;
+}
+.input-group {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+}
+.input-wrapper {
+  width: 45%;
+}
+.input-wrapper input,
+.input-wrapper textarea {
+  width: 100%;
+  background-color: transparent;
+  outline: none;
+  border: none;
+  font-size: 1em;
+  font-family: "Poppins", sans-serif;
+  padding-bottom: 0.5em;
+  border-bottom: 1px solid gray;
+}
+.input-wrapper.message {
+  width: 100%;
+  margin-top: 2em;
+}
+.primary-btn {
+  width: fit-content;
+  margin-top: 2em;
+  background-color: white;
+  color: var(--primary-color);
+  outline: 1px solid transparent;
+  border: none;
+  font-size: 1em;
+  padding: 0.5em 2em;
+  border-radius: 2em;
+  cursor: pointer;
+  font-family: "Poppins", sans-serif;
+}
+.primary-btn:hover {
+  background-color: var(--secondary-color);
+  outline: 1px solid white;
+}
+.primary-btn:hover > a {
+  color: white;
+}
+@media only screen and (max-width: 420px) {
+  .contact-section .contact-container {
+    flex-direction: column;
+  }
+  .left-container__contact,
+  .right-container__contact {
+    width: 100%;
+  }
+  .right-container__contact {
+    margin-top: 3em;
+  }
+  .input-group {
+    flex-direction: column;
+  }
+  .input-wrapper {
+    width: 100%;
+  }
+  .input-group .input-wrapper:nth-of-type(2) {
+    margin-top: 2em;
+  }
+}
+
+@media (max-width: 920px) {
+  .contact-section .contact-container {
+    flex-direction: column;
+  }
+  .left-container__contact,
+  .right-container__contact {
+    width: 100%;
+  }
+  .right-container__contact {
+    margin-top: 5em;
+  }
+}

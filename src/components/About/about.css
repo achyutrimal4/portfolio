@@ -1,0 +1,153 @@
+.about-section {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 4%;
+}
+
+.about-container {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+  background-color: var(--secondary-color);
+  border-radius: 3em;
+  padding: 4%;
+}
+.about-container .title {
+  margin-bottom: 4em;
+}
+.about-container > * {
+  text-align: center;
+}
+.about-image {
+  width: 50%;
+  display: flex;
+  align-items: center;
+}
+.about-image img {
+  width: 70%;
+}
+.about-text {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.about-text p {
+  margin-bottom: 1em;
+}
+.about-text .primary-btn a {
+  color: var(--secondary-color);
+  text-decoration: none;
+}
+.education-section {
+  margin-top: 5em;
+  width: 100%;
+}
+.edu-history {
+  width: 100%;
+  display: flex;
+  text-align: left;
+  gap: 0.5em;
+  margin-top: 3em;
+}
+.edu-history .date {
+  background-color: white;
+  height: fit-content;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.edu-history .date p {
+  color: var(--primary-color) !important;
+}
+.course {
+  width: 100%;
+}
+.course span {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+}
+.course span p {
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 0.2em;
+  font-size: 0.9em;
+  color: var(--primary-color);
+  border-radius: 0.2em;
+}
+.italic {
+  font-style: italic;
+  font-weight: 300;
+  font-size: 1.1em;
+}
+.about-container__second {
+  margin-top: 5%;
+}
+.skills-container {
+  margin-top: 5em;
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+}
+.skills-container--inner {
+  width: 48%;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid rgba(255, 255, 255, 0.459);
+  border-radius: 0.5em;
+  padding: 2%;
+}
+.skills-tags {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1em 1em;
+  margin-top: 2em;
+}
+.skills-tags p {
+  border: 1px solid rgba(255, 255, 255, 0.459);
+  padding: 0.2em 1em;
+  border-radius: 2em;
+  cursor: pointer;
+}
+
+@media (max-width: 920px) {
+  .about-text {
+    width: 75%;
+  }
+}
+@media (max-width: 420px) {
+  .about-text {
+    width: 95%;
+  }
+  .education-section {
+    margin-top: 3em;
+  }
+  .course span p {
+    font-size: 0.9em;
+  }
+  .course p {
+    font-size: 0.9em;
+  }
+  .course h1 {
+    font-size: 1.5em;
+  }
+  .skills-container {
+    flex-direction: column;
+    gap: 2em;
+  }
+  .skills-container--inner {
+    width: 100%;
+  }
+  .skills-tags p {
+    font-size: 0.9em;
+  }
+}
