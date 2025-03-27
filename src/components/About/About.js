@@ -71,7 +71,7 @@ function About() {
           </div>
           <div className="primary-btn">
             <a
-              href="/files/Achyut Rimal- CV.pdf"
+              href={`${process.env.PUBLIC_URL}/files/Achyut_Rimal_CV.pdf`}
               download="Achyut_Rimal_CV.pdf"
             >
               DOWNLOAD CV
