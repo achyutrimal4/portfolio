@@ -15,6 +15,7 @@ function App() {
       <div style={{ marginTop: "5em" }}>
         <Routes location={location} key={location.pathname}>
           <Route index element={<HomeScreen />} />
+          <Route path="*" element={<HomeScreen />} />
         </Routes>
         <NewFooter />
       </div>
