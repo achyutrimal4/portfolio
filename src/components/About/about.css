@@ -42,7 +42,8 @@
   color: var(--secondary-color);
   text-decoration: none;
 }
-.education-section {
+.education-section,
+.skills-section {
   margin-top: 5em;
   width: 100%;
 }
@@ -89,34 +90,6 @@
 }
 .about-container__second {
   margin-top: 5%;
-}
-.skills-container {
-  margin-top: 5em;
-  display: flex;
-  width: 100%;
-  align-items: center;
-  justify-content: space-between;
-}
-.skills-container--inner {
-  width: 48%;
-  display: flex;
-  flex-direction: column;
-  border: 1px solid rgba(255, 255, 255, 0.459);
-  border-radius: 0.5em;
-  padding: 2%;
-}
-.skills-tags {
-  width: 100%;
-  display: flex;
-  flex-wrap: wrap;
-  gap: 1em 1em;
-  margin-top: 2em;
-}
-.skills-tags p {
-  border: 1px solid rgba(255, 255, 255, 0.459);
-  padding: 0.2em 1em;
-  border-radius: 2em;
-  cursor: pointer;
 }
 
 @media (max-width: 920px) {

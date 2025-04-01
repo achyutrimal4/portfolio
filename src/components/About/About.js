@@ -77,6 +77,46 @@ function About() {
               DOWNLOAD CV
             </a>
           </div>
+          <div className="skills-section">
+            <h1>Skills</h1>
+            <div className="edu-history">
+              <div className="course">
+                <span>
+                  <h1>MSc. IT, Data Analytics</h1>
+                  <p>2024-2025</p>
+                </span>
+                <p className="italic">
+                  University of the West of Scotland, London
+                </p>
+                <p>
+                  Graduated with grade "A" in MSc. IT with Data Analytics from
+                  the University of the West of Scotland, specializing in
+                  Machine Learning, Data Analysis, AI, Data Visualization, and
+                  Database Management.
+                </p>
+              </div>
+            </div>
+
+            <div className="edu-history">
+              <div className="course">
+                <span>
+                  <h1>BSc. IT, Computer Systems Engineering</h1>
+                  <p>2018-2022</p>
+                </span>
+
+                <p className="italic">
+                  International School of Management and Technology, Kathmandu,
+                  Nepal
+                </p>
+                <p>aff. University of Sunderland</p>
+                <p>
+                  Graduated with First Class Honors with specialization in Web
+                  Development, Software Development, Object-oriented
+                  Programming, Data Analysis and Machine Learning
+                </p>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </section>
