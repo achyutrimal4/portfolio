@@ -18,7 +18,7 @@ const projects = [
     name: "Movie Rental Data Analysis",
     description: "Advanced SQL code for analysing a movie rental business.",
     image: "images/movieRental.jpg",
-    url: "  https://glacier-coyote-dbb.notion.site/SQL-1bc3588ef86f80b2be0ed7d5f914ec5d?pvs=4",
+    url: "https://github.com/achyutrimal4/greencycles",
     category: "SQL",
     icon: <DiPostgresql />,
     type: "Data Analysis",
