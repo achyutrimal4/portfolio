@@ -35,9 +35,11 @@
   height: 18px;
   background-color: #e0e0e0;
   overflow: hidden;
+  border-radius: 8px;
 }
 
 .skill-bar-fill {
   height: 100%;
   background-color: orangered;
+  border-radius: 6px;
 }
