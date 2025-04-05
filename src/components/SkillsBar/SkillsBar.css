@@ -1,10 +1,12 @@
 /* src/components/SkillsBar.css */
 
 .skills-container {
-  max-width: 600px;
-  margin: 40px auto;
-  padding: 20px;
-  font-family: Arial, sans-serif;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(45%, 1fr));
+  gap: 5%;
+  margin: 10% auto;
+  padding: 5%;
 }
 
 .skill {
@@ -20,22 +22,22 @@
 .skill-name {
   font-weight: bold;
   font-size: 14px;
+  font-family: "Poppins", sans-serif;
 }
 
 .skill-percentage {
   font-size: 14px;
+  font-family: "Poppins", sans-serif;
 }
 
 .skill-bar-bg {
   width: 100%;
   height: 18px;
   background-color: #e0e0e0;
-  border-radius: 10px;
   overflow: hidden;
 }
 
 .skill-bar-fill {
   height: 100%;
-  background-color: #3498db;
-  border-radius: 10px;
+  background-color: orangered;
 }

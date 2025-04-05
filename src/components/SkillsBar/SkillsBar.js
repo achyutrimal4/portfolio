@@ -4,10 +4,12 @@ import { motion, useInView } from "framer-motion";
 import "./SkillsBar.css";
 
 const skills = [
-  { name: "Python", level: 90 },
-  { name: "SQL", level: 80 },
-  { name: "React", level: 75 },
-  { name: "Data Analysis", level: 85 },
+  { name: "Python", level: 80 },
+  { name: "SQL", level: 90 },
+  { name: "Git Version Control", level: 75 },
+  { name: "Data Analysis", level: 80 },
+  { name: "Tableau", level: 70 },
+  { name: "Statistics", level: 70 },
 ];
 
 const SkillsBar = () => {
