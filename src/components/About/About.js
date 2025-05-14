@@ -43,10 +43,10 @@ function About() {
                   University of the West of Scotland, London
                 </p>
                 <p>
-                  Graduated with grade "A" in MSc. IT with Data Analytics from
-                  the University of the West of Scotland, specializing in
-                  Machine Learning, Data Analysis, AI, Data Visualization, and
-                  Database Management.
+                  Graduated with <em>Distinction</em> in MSc. IT with Data
+                  Analytics from the University of the West of Scotland,
+                  specializing in Machine Learning, Data Analysis, AI, Data
+                  Visualization, and Database Management.
                 </p>
               </div>
             </div>
@@ -64,8 +64,8 @@ function About() {
                 </p>
                 <p>aff. University of Sunderland</p>
                 <p>
-                  Graduated with First Class Honors with specialization in Web
-                  Development, Software Development, Object-oriented
+                  Graduated with Upper Second Class Honors with specialization
+                  in Web Development, Software Development, Object-oriented
                   Programming, Data Analysis and Machine Learning
                 </p>
               </div>
